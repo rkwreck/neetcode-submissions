@@ -1,0 +1,15 @@
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:        
+        # use sorting
+        s_list = list(s)
+        s_list.sort()
+
+        t_list = list(t)
+        t_list.sort()
+
+        # lists of unequal length are never considered equal 
+        #  even if elements are same
+        if (s_list == t_list):
+            return True
+
+        return False 
